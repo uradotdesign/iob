@@ -184,11 +184,29 @@ body {
   margin-top: 46px;
 }
 
-.projects-contributions .text h2 {
+.projects-contributions .text-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 77px;
+}
+
+.projects-contributions .text-statistics .text {
+  max-width: 590px;
+}
+
+.projects-contributions .text-statistics .text h2 {
   margin-bottom: 20px;
 }
 
-.projects-contributions .statistics {
+.projects-contributions .text-statistics .statistics {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,11 +216,16 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 67px;
-  margin-bottom: 150px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 64px;
 }
 
-.projects-contributions .statistics h2 {
+.projects-contributions .text-statistics .statistics .statistic {
+  width: 50%;
+}
+
+.projects-contributions .text-statistics .statistics h2 {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
@@ -213,7 +236,7 @@ body {
   margin: 0 0 12px;
 }
 
-.projects-contributions .statistics p {
+.projects-contributions .text-statistics .statistics p {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
@@ -345,5 +368,20 @@ footer .text a {
   text-decoration: none;
   padding: 16px 28px;
   border-radius: 8px;
+}
+
+footer .address {
+  position: absolute;
+  bottom: 45px;
+  right: 15px;
+}
+
+footer .address h4 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.23em;
+  color: #000000;
+  margin: 0 0 5px;
 }
 /*# sourceMappingURL=style.css.map */
