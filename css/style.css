@@ -1,13 +1,12 @@
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   src: url(../fonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
-
 body {
   margin: 0;
   overflow-x: hidden;
   font-size: 60px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .container {
@@ -17,50 +16,32 @@ body {
 }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
   position: relative;
   width: 100%;
 }
-
 .main .main-bg {
   width: 100vw;
   height: 720px;
   position: absolute;
   background-image: url(../img/main-bg.svg);
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .main .main-content {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   margin-top: 86px;
   margin-bottom: 145px;
 }
-
 .main .main-content h1 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 1em;
@@ -71,9 +52,8 @@ body {
   max-width: 706px;
   margin: 64px 0 24px 0;
 }
-
 .main .main-content p {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 0.33em;
@@ -82,10 +62,9 @@ body {
   max-width: 618px;
   margin: 0 0 48px;
 }
-
 .main .main-content a {
   text-decoration: none;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -97,40 +76,24 @@ body {
 }
 
 .our-work {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  position: relative;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: flex-start;
+  justify-content: space-around;
   width: 100%;
   padding-bottom: 116px;
   border-bottom: 1px solid #eaecf0;
+  gap: 20px;
 }
-
 .our-work .text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
 }
-
 .our-work .text a {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-size: 0.266em;
@@ -141,27 +104,31 @@ body {
   border-radius: 8px;
   display: inline-block;
 }
-
 .our-work .image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  overflow: hidden;
+}
+.our-work .image .small {
+  display: none;
 }
 
 .our-work .text h3,
 .projects-contributions .text h3 {
   text-transform: uppercase;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 0.266em;
   color: #b45309;
   margin: 0 0 12px 0;
 }
-
 .our-work .text h2,
 .projects-contributions .text h2 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 0.6em;
@@ -169,10 +136,9 @@ body {
   color: #92400e;
   margin: 0 0 40px;
 }
-
 .our-work .text p,
 .projects-contributions .text p {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 0.3em;
@@ -183,50 +149,31 @@ body {
 .projects-contributions {
   margin-top: 46px;
 }
-
 .projects-contributions .text-statistics {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 77px;
 }
-
 .projects-contributions .text-statistics .text {
   max-width: 590px;
 }
-
 .projects-contributions .text-statistics .text h2 {
   margin-bottom: 20px;
 }
-
 .projects-contributions .text-statistics .statistics {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   row-gap: 64px;
 }
-
 .projects-contributions .text-statistics .statistics .statistic {
   width: 50%;
 }
-
 .projects-contributions .text-statistics .statistics h2 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 1em;
@@ -235,9 +182,8 @@ body {
   color: #b45309;
   margin: 0 0 12px;
 }
-
 .projects-contributions .text-statistics .statistics p {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-size: 0.3em;
@@ -245,44 +191,28 @@ body {
   color: #101828;
   margin: 0;
 }
-
 .projects-contributions .projects {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 38px;
-          column-gap: 38px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
   row-gap: 46px;
 }
-
 .projects-contributions .projects .project-container {
   width: calc(50% - 85px);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 14px;
   padding: 48px 32px;
   border: 1px solid #d8d8d8;
   border-radius: 8px;
 }
-
 .projects-contributions .projects .project-container .text h3 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 0.466em;
@@ -291,55 +221,37 @@ body {
   margin: 0 0 8px;
   text-transform: none;
 }
-
 .projects-contributions .projects .project-container .text p {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 0.26em;
   color: #2d2d2d;
   margin: 0;
+  line-height: 150%;
 }
 
 footer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
   position: relative;
   margin-top: 183px;
 }
-
 footer img {
   position: absolute;
 }
-
 footer .text {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   margin-bottom: 47px;
 }
-
 footer .text h3 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 0.6em;
@@ -347,9 +259,8 @@ footer .text h3 {
   color: #92400e;
   margin: 0 0 20px;
 }
-
 footer .text p {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 0.33em;
@@ -357,9 +268,8 @@ footer .text p {
   color: #92400e;
   margin: 0 0 20px;
 }
-
 footer .text a {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-size: 0.3em;
@@ -369,19 +279,209 @@ footer .text a {
   padding: 16px 28px;
   border-radius: 8px;
 }
-
 footer .address {
   position: absolute;
   bottom: 45px;
   right: 15px;
 }
-
 footer .address h4 {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-size: 0.23em;
   color: #000000;
   margin: 0 0 5px;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 91vw;
+  }
+  .projects-contributions .text-statistics {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .projects-contributions .text-statistics .statistics {
+    width: 100%;
+    row-gap: 20px;
+  }
+  .projects-contributions .projects {
+    row-gap: 20px;
+  }
+  .projects-contributions .projects .icon img {
+    width: 64px;
+  }
+  .projects-contributions .projects .project-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 32px;
+  }
+  .projects-contributions .projects .project-container h3 {
+    font-size: 24px !important;
+  }
+  .projects-contributions .projects .project-container p {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 30px;
+  }
+  .main .main-bg {
+    height: 400px;
+  }
+  .main .main-content {
+    margin-top: 30px;
+    margin-bottom: 110px;
+  }
+  .main .main-content img {
+    width: 131px;
+  }
+  .main .main-content h1 {
+    margin: 23px 0 13px 0;
+    text-align: left;
+  }
+  .main .main-content p {
+    text-align: left;
+    margin: 0 0 22px;
+  }
+  .main .main-content a {
+    flex: 100%;
+    width: calc(100% - 56px);
+    text-align: center;
+  }
+  .our-work .text h3,
+  .projects-contributions .text h3 {
+    margin: 0 0 16px 0;
+  }
+  .our-work .text h2,
+  .projects-contributions .text h2 {
+    margin: 0 0 16px;
+  }
+  .our-work .text p,
+  .projects-contributions .text p {
+    margin: 0 0 32px;
+  }
+  .our-work .image {
+    max-height: 300px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 130px;
+  }
+  footer .text {
+    margin-bottom: 40px;
+  }
+  footer .text h3 {
+    font-size: 30px !important;
+  }
+  footer .text p {
+    font-size: 18px !important;
+  }
+  footer .text a {
+    font-size: 18px !important;
+  }
+  footer .address {
+    position: relative;
+    bottom: unset;
+    right: unset;
+    margin-bottom: 40px;
+  }
+  footer .address h4 {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 30px;
+  }
+  .main .main-bg {
+    height: 400px;
+  }
+  .main .main-content {
+    margin-top: 30px;
+    margin-bottom: 110px;
+  }
+  .main .main-content img {
+    width: 131px;
+  }
+  .main .main-content h1 {
+    margin: 23px 0 13px 0;
+    text-align: left;
+  }
+  .main .main-content p {
+    text-align: left;
+    margin: 0 0 22px;
+  }
+  .main .main-content a {
+    flex: 100%;
+    width: calc(100% - 56px);
+    text-align: center;
+  }
+  .our-work {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .our-work .text {
+    width: 100%;
+    order: 2;
+  }
+  .our-work .image {
+    width: 100vw;
+    order: 1;
+    align-items: flex-end;
+    overflow-y: hidden;
+    max-height: 153px;
+  }
+  .our-work .image img {
+    width: 100%;
+  }
+  .our-work .image img .small {
+    display: inline-block;
+  }
+  .our-work .image img .large {
+    display: none;
+  }
+  .our-work .text h3,
+  .projects-contributions .text h3 {
+    margin: 0 0 16px 0;
+  }
+  .our-work .text h2,
+  .projects-contributions .text h2 {
+    margin: 0 0 16px;
+  }
+  .our-work .text p,
+  .projects-contributions .text p {
+    margin: 0 0 32px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 130px;
+  }
+  footer .text {
+    margin-bottom: 40px;
+  }
+  footer .text h3 {
+    font-size: 30px !important;
+  }
+  footer .text p {
+    font-size: 18px !important;
+  }
+  footer .text a {
+    font-size: 18px !important;
+  }
+  footer .address {
+    position: relative;
+    bottom: unset;
+    right: unset;
+    margin-bottom: 40px;
+  }
+  footer .address h4 {
+    font-size: 14px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
