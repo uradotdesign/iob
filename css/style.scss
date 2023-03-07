@@ -512,16 +512,12 @@ footer {
             overflow-y: hidden;
             max-height: 153px;
 
-            img {
-                width: 100%;
-                
-                .small {
-                    display: inline-block;
-                }
+            .small {
+                display: inline-block !important;
+            }
 
-                .large {
-                    display: none;
-                }
+            .large {
+                display: none;
             }
         }
     }
@@ -548,8 +544,7 @@ footer {
         align-items: center;
         justify-content: flex-end;
         margin-top: 130px;
-        
-        
+
         .text {
             margin-bottom: 40px;
             h3 {

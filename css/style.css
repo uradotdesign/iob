@@ -436,13 +436,10 @@ footer .address h4 {
     overflow-y: hidden;
     max-height: 153px;
   }
-  .our-work .image img {
-    width: 100%;
+  .our-work .image .small {
+    display: inline-block !important;
   }
-  .our-work .image img .small {
-    display: inline-block;
-  }
-  .our-work .image img .large {
+  .our-work .image .large {
     display: none;
   }
   .our-work .text h3,
