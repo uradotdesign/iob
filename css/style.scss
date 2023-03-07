@@ -14,6 +14,10 @@ body {
     max-width: 1216px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .main {
@@ -263,13 +267,13 @@ footer {
     align-items: flex-end;
     justify-content: center;
     position: relative;
-    margin-top: 183px;
 
     img {
         position: absolute;
     }
 
     .text {
+        margin-top: 183px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -368,7 +372,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     body {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .main {
@@ -421,7 +425,7 @@ footer {
 
     .our-work {
         .image {
-            max-height: 300px;
+            max-height: 450px;
         }
     }
 
@@ -429,9 +433,8 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        margin-top: 130px;
-
         .text {
+            margin-top: 130px;
             margin-bottom: 40px;
             h3 {
                 font-size: 30px !important;
@@ -460,18 +463,14 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
-    body {
-        font-size: 30px;
-    }
-
     .main {
         .main-bg {
-            height: 400px;
+            height: 440px;
         }
 
         .main-content {
             margin-top: 30px;
-            margin-bottom: 110px;
+            margin-bottom: 159px;
 
             img {
                 width: 131px;
@@ -480,11 +479,13 @@ footer {
             h1 {
                 margin: 23px 0 13px 0;
                 text-align: left;
+                font-size: 30px !important;
             }
 
             p {
                 text-align: left;
                 margin: 0 0 22px;
+                font-size: 16px !important;
             }
 
             a {
@@ -503,6 +504,10 @@ footer {
         .text {
             width: 100%;
             order: 2;
+
+            a {
+                font-size: 16px !important;
+            }
         }
 
         .image {
@@ -527,14 +532,31 @@ footer {
         .text {
             h3 {
                 margin: 0 0 16px 0;
+                font-size: 14px !important;
             }
 
             h2 {
                 margin: 0 0 16px;
+                font-size: 30px !important;
+                line-height: 100%;
             }
 
             p {
                 margin: 0 0 32px;
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    .projects-contributions {
+        .text-statistics {
+            .statistics {
+                h2 {
+                    font-size: 40px !important;
+                }
+                p {
+                    font-size: 14px !important;
+                }
             }
         }
     }
@@ -543,10 +565,18 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        margin-top: 130px;
+        width: 100vw;
+        background-image: url(../img/footer-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -15%;
+
+        img {
+            display: none;
+        }
 
         .text {
-            margin-bottom: 40px;
+            margin-top: 130px;
             h3 {
                 font-size: 30px !important;
             }
