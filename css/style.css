@@ -109,7 +109,7 @@ body {
   display: inline-block;
 }
 .our-work .image {
-  overflow-y: hidden;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
