@@ -117,16 +117,19 @@ body {
     }
 
     .image {
-        position: relative;
+        overflow-y: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 50%;
-        overflow: hidden;
+    }
 
-        .small {
-            display: none;
-        }
+    .large {
+        height: 716px;
+    }
+    
+    .small {
+        display: none;
     }
 }
 
@@ -424,8 +427,8 @@ footer {
     }
 
     .our-work {
-        .image {
-            max-height: 450px;
+        .large {
+            height: 454px;
         }
     }
 
@@ -462,7 +465,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 708px) {
     .main {
         .main-bg {
             height: 440px;
@@ -511,19 +514,21 @@ footer {
         }
 
         .image {
-            width: 100vw;
-            order: 1;
-            align-items: flex-end;
+            max-height: 150px;
             overflow-y: hidden;
-            max-height: 153px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 100vw;
+        }
+        
+        .small {
+            display: inline-block !important;
+            width: 100%;
+        }
 
-            .small {
-                display: inline-block !important;
-            }
-
-            .large {
-                display: none;
-            }
+        .large {
+            display: none;
         }
     }
 

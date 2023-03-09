@@ -109,14 +109,16 @@ body {
   display: inline-block;
 }
 .our-work .image {
-  position: relative;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
-  overflow: hidden;
 }
-.our-work .image .small {
+.our-work .large {
+  height: 716px;
+}
+.our-work .small {
   display: none;
 }
 
@@ -366,8 +368,8 @@ footer .address h4 {
   .projects-contributions .text p {
     margin: 0 0 32px;
   }
-  .our-work .image {
-    max-height: 450px;
+  .our-work .large {
+    height: 454px;
   }
   footer {
     flex-direction: column;
@@ -397,7 +399,7 @@ footer .address h4 {
     font-size: 14px !important;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 708px) {
   .main .main-bg {
     height: 440px;
   }
@@ -436,16 +438,18 @@ footer .address h4 {
     font-size: 16px !important;
   }
   .our-work .image {
-    width: 100vw;
-    order: 1;
-    align-items: flex-end;
+    max-height: 150px;
     overflow-y: hidden;
-    max-height: 153px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
   }
-  .our-work .image .small {
+  .our-work .small {
     display: inline-block !important;
+    width: 100%;
   }
-  .our-work .image .large {
+  .our-work .large {
     display: none;
   }
   .our-work .text h3,
