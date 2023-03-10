@@ -333,6 +333,12 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1216px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .container {
         max-width: 91vw;
@@ -514,7 +520,7 @@ footer {
         }
 
         .image {
-            max-height: 150px;
+            // max-height: 150px;
             overflow-y: hidden;
             display: flex;
             align-items: flex-end;

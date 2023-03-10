@@ -415,6 +415,12 @@ footer .address h4 {
   margin: 0 0 5px;
 }
 
+@media only screen and (max-width: 1216px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
     max-width: 91vw;
@@ -578,7 +584,6 @@ footer .address h4 {
     font-size: 16px !important;
   }
   .our-work .image {
-    max-height: 150px;
     overflow-y: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
