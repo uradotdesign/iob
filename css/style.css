@@ -436,25 +436,11 @@ footer .address h4 {
     width: 100%;
     row-gap: 20px;
   }
-  .projects-contributions .projects {
-    row-gap: 20px;
-  }
   .projects-contributions .projects .icon img {
-    width: 64px;
+    width: 54px;
   }
-  .projects-contributions .projects .project-container {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 32px;
-  }
-  .projects-contributions .projects .project-container h3 {
-    font-size: 24px !important;
-  }
-  .projects-contributions .projects .project-container p {
-    font-size: 14px !important;
+  .projects-contributions .text-statistics .text {
+    max-width: unset;
   }
 }
 
@@ -488,17 +474,41 @@ footer .address h4 {
   .our-work .text h3,
   .projects-contributions .text h3 {
     margin: 0 0 16px 0;
+    font-size: 14px !important;
   }
   .our-work .text h2,
   .projects-contributions .text h2 {
     margin: 0 0 16px;
+    font-size: 30px !important;
+    line-height: 100%;
   }
   .our-work .text p,
   .projects-contributions .text p {
     margin: 0 0 32px;
+    font-size: 14px !important;
   }
   .our-work .large {
     height: 454px;
+  }
+  .projects-contributions .projects {
+    row-gap: 20px;
+  }
+  .projects-contributions .projects .icon img {
+    width: 64px;
+  }
+  .projects-contributions .projects .project-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 32px;
+  }
+  .projects-contributions .projects .project-container h3 {
+    font-size: 24px !important;
+  }
+  .projects-contributions .projects .project-container p {
+    font-size: 14px !important;
   }
   footer {
     -webkit-box-orient: vertical;
@@ -542,7 +552,7 @@ footer .address h4 {
   }
   .main .main-content {
     margin-top: 30px;
-    margin-bottom: 159px;
+    margin-bottom: 120px;
   }
   .main .main-content img {
     width: 131px;
@@ -602,22 +612,6 @@ footer .address h4 {
   }
   .our-work .large {
     display: none;
-  }
-  .our-work .text h3,
-  .projects-contributions .text h3 {
-    margin: 0 0 16px 0;
-    font-size: 14px !important;
-  }
-  .our-work .text h2,
-  .projects-contributions .text h2 {
-    margin: 0 0 16px;
-    font-size: 30px !important;
-    line-height: 100%;
-  }
-  .our-work .text p,
-  .projects-contributions .text p {
-    margin: 0 0 32px;
-    font-size: 14px !important;
   }
   .projects-contributions .text-statistics .statistics h2 {
     font-size: 40px !important;

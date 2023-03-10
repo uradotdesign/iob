@@ -356,26 +356,14 @@ footer {
         }
 
         .projects {
-            row-gap: 20px;
-
             .icon img {
-                width: 64px;
-            }
-
-            .project-container {
-                width: 100%;
-                flex-direction: column;
-                padding: 32px;
-
-                h3 {
-                    font-size: 24px !important;
-                }
-
-                p {
-                    font-size: 14px !important;
-                }
+                width: 54px;
             }
         }
+    }
+
+    .projects-contributions .text-statistics .text {
+        max-width: unset;
     }
 }
 
@@ -420,14 +408,18 @@ footer {
         .text {
             h3 {
                 margin: 0 0 16px 0;
+                font-size: 14px !important;
             }
 
             h2 {
                 margin: 0 0 16px;
+                font-size: 30px !important;
+                line-height: 100%;
             }
 
             p {
                 margin: 0 0 32px;
+                font-size: 14px !important;
             }
         }
     }
@@ -435,6 +427,30 @@ footer {
     .our-work {
         .large {
             height: 454px;
+        }
+    }
+
+    .projects-contributions {
+        .projects {
+            row-gap: 20px;
+
+            .icon img {
+                width: 64px;
+            }
+
+            .project-container {
+                width: 100%;
+                flex-direction: column;
+                padding: 32px;
+
+                h3 {
+                    font-size: 24px !important;
+                }
+
+                p {
+                    font-size: 14px !important;
+                }
+            }
         }
     }
 
@@ -479,7 +495,7 @@ footer {
 
         .main-content {
             margin-top: 30px;
-            margin-bottom: 159px;
+            margin-bottom: 120px;
 
             img {
                 width: 131px;
@@ -535,27 +551,6 @@ footer {
 
         .large {
             display: none;
-        }
-    }
-
-    .our-work,
-    .projects-contributions {
-        .text {
-            h3 {
-                margin: 0 0 16px 0;
-                font-size: 14px !important;
-            }
-
-            h2 {
-                margin: 0 0 16px;
-                font-size: 30px !important;
-                line-height: 100%;
-            }
-
-            p {
-                margin: 0 0 32px;
-                font-size: 14px !important;
-            }
         }
     }
 
